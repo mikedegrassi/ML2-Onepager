@@ -1,14 +1,37 @@
 html {
     scroll-behavior: smooth;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    background: url("images/ml2-logo.png") no-repeat center center;
+    background-size: 80px 80px; /* Specifieke afmetingen voor de achtergrondafbeelding */
+    display: block;
+    width: 100px;
+    height: 100px;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #FBFBFB;
 }
 
 html, body {
@@ -22,8 +45,7 @@ html, body {
 }
 
 .swiper-wrapper, .swiper-slide, .outer-container, .inner-container {
-    box-sizing: border-box; // Zorgt ervoor dat padding en border in de breedte worden inbegrepen
-width: 100%; // Zorgt ervoor dat de breedte niet groter is dan het viewport
+    box-sizing: border-box;
 }
 
 .gentle-hover-shake {
@@ -64,7 +86,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #FBFBFB;
 }
 
 .header-content {
@@ -75,15 +97,15 @@ header {
     border-radius: 15px;
 }
 
-.poetsen-one-regular {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
+.vollkorn {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
     font-style: normal;
-    color: #fff;
 }
 
 h1, h2 {
-    color: #ffffff;
+    color: #FBFBFB;
 }
 
 section {
@@ -94,7 +116,7 @@ section {
 footer {
     font-size: 0.8em;
     background: #0056b3;
-    color: #ffffff;
+    color: #FBFBFB;
     text-align: center;
     padding: 20px 0;
 }
@@ -157,10 +179,43 @@ footer {
     background-color: rgb(255, 255, 255);
 }
 
+.design-card-content {
+    width: 50%;
+}
+
+.design-card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px 40px;
+}
+
 .img-wrapper {
     width: 175px;
     height: 175px;
     clip-path: circle(50% at 50% 50%);
+}
+
+.img-wrapper > img {
+    width: 100%;
+}
+
+.design-img-wrapper {
+    width: 550px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.design-img-wrapper > img {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.d-none {
+    display: none;
 }
 
 .name {
@@ -172,7 +227,7 @@ footer {
 
 .position {
     line-height: 26px;
-    color: #e63946;
+    color: #092534;
     font-weight: 700;
     margin: 0px 0px 20px;
 }
@@ -196,7 +251,7 @@ footer {
     display: block;
 }
 
-.swiper.team-swiper {
+.swiper.team-swiper.design-swiper {
     max-width: 100%;
     width: 100%;
     height: fit-content;
@@ -204,7 +259,7 @@ footer {
 
 .swiper-slide {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     height: auto;
 }
 
@@ -219,6 +274,92 @@ footer {
     height: 12px;
     width: 12px;
     background-color: rgb(0, 166, 127);
+}
+
+.clearfix {
+    display: flex;
+    width: 80%;
+    margin: auto auto 90px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.concept-img {
+    float: left;
+    width: 30%;
+    margin-right: 3.33%;
+    cursor: pointer;
+    position: relative;
+    transition: width 0.5s ease, margin-right 0.5s ease; /* Add transition */
+}
+
+.concept-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: width 0.5s ease; /* Add transition */
+}
+
+.concept-img.active {
+    width: 100%; /* Make the active image wider */
+    margin-right: 0; /* Remove margin for full width */
+}
+
+.concept-img.active img {
+    float: left;
+    width: 50%; /* Reduce the width of the image */
+}
+
+.concept-img .text-blk {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: none; /* Start with hidden text */
+    opacity: 0; /* Ensure initial opacity is 0 for fade-in effect */
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+}
+
+.concept-img.active .text-blk {
+    display: block; /* Show the text for the active image */
+    opacity: 1; /* Make the text visible */
+}
+
+.strong-text {
+    display: block;
+}
+
+.concept-img.active .strong-text {
+    display: none; /* Hide the strong-text for the active image */
+}
+
+@media (max-width: 1000px) {
+    .clearfix {
+        flex-direction: column;
+    }
+
+    .concept-img {
+        pointer-events: none; /* Disable pointer events */
+    }
+
+    .concept-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Add some space between items */
+    }
+    .concept-img .text-blk {
+        display: block; /* Make text visible */
+        opacity: 1; /* Ensure text is visible */
+        width: 100%;
+    }
+    .strong-text {
+        display: none; /* Hide strong-text */
+    }
 }
 
 .swiper-wrapper {
@@ -247,10 +388,6 @@ footer {
     display: none;
 }
 
-.img-wrapper > img {
-    width: 100%;
-}
-
 .a-first {
     position: absolute;
     font-size: x-large; /* Starting with a large font size */
@@ -261,19 +398,19 @@ footer {
     text-decoration: none;
     text-align: center;
     padding: 4px 16px; /* Specific horizontal padding */
-    background-color: #e63946; /* Ensuring background color visibility */
-    color: #fff; /* Text color */
+    background-color: #FBFBFB; /* Ensuring background color visibility */
+    color: #FBFBFB; /* Text color */
     margin: 15px;
 }
 
 .navbar-a {
     margin: 5px;
     border-radius: 50%; /* Make the links circular */
-    background-color: #e63946; /* Red background */
+    background-color: #092534; /* Red background */
     text-align: center;
     float: left; /* Keep the links aligned to the left */
     display: block;
-    color: #fff; /* White text */
+    color: #FBFBFB; /* White text */
     text-decoration: none;
     font-size: 17px;
     width: 50px; /* Set a fixed width */
@@ -283,7 +420,7 @@ footer {
 }
 
 .navbar a:hover {
-    background-color: #f1c40f; /* Yellow background on hover */
+    background-color: #F96900; /* Yellow background on hover */
 }
 
 .navbar a.icon {
@@ -309,11 +446,11 @@ footer {
     opacity: 0;
     visibility: hidden;
     white-space: nowrap; /* Voorkomt dat de tekst afbreekt */
-    color: #fff;
-    background-color: rgba(230, 57, 70, 0.8); /* Semi-transparante achtergrond voor beter contrast */
+    color: #FBFBFB;
+    background-color: rgba(9, 37, 52, 0.8); /* Semi-transparante achtergrond voor beter contrast */
     padding: 0 10px; /* Voeg wat padding toe rondom tekst */
     border-radius: 15px; /* Ronde hoeken */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtiele schaduw voor diepte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtiele schaduw voor diepte */
 }
 
 .navbar, .navbar-links {
@@ -337,6 +474,14 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
+    .design-card-content {
+        width: 100%;
+    }
+
+    .design-img-wrapper > img {
+        width: 54%;
+    }
 
     .header-content {
         width: 80%;
@@ -378,7 +523,7 @@ footer {
 .line {
     fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: #fff;
+    stroke: #FBFBFB;
     stroke-width: 5.5;
     stroke-linecap: round;
 }
@@ -391,7 +536,7 @@ footer {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #fff;
+    color: #FBFBFB;
 }
 
 .ham > path {
@@ -438,7 +583,7 @@ footer {
 
 .footer {
     position: relative;
-    background: #e63946;
+    background: #092534;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -455,6 +600,7 @@ footer {
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .social-icon__item,
@@ -464,18 +610,19 @@ footer {
 
 .social-icon__link {
     font-size: 2rem;
-    color: #fff;
+    color: #FBFBFB;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
 }
+
 .social-icon__link:hover {
     transform: translateY(-10px);
 }
 
 .menu__link {
     font-size: 1.2rem;
-    color: #fff;
+    color: #FBFBFB;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -489,7 +636,7 @@ footer {
 }
 
 .footer p {
-    color: #fff;
+    color: #FBFBFB;
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
@@ -550,5 +697,3 @@ footer {
         background-positon-x: 0px;
     }
 }
-
-
