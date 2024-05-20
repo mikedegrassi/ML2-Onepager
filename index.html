@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fall Prevention for Seniors</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <div class="navbar" id="myNavbar">
-    <a class="a-first poetsen-one-regular gentle-hover-shake" href="#content">
-        ValNetNiet
+    <a class="a-first vollkorn gentle-hover-shake logo" href="#content">
+
     </a>
     <div class="navbar-links">
         <a class="navbar-a icon" href="javascript:void(0);"
@@ -34,148 +41,364 @@
         </a>
         <a class="navbar-a gentle-hover-shake" href="#team">
             <i class="fas fa-people-group icon"></i>
-            <span class="nav-text">Team</span>
+            <span class=" nav-text">Team</span>
         </a>
-        <a class="navbar-a gentle-hover-shake" href="#news">
+        <a class="navbar-a gentle-hover-shake" href="#design">
+            <i class="fa-solid fa-palette"></i>
+            <span class=" nav-text">Design</span>
+        </a>
+        <a class="navbar-a gentle-hover-shake" href="#concepts">
             <i class="fa-solid fa-lightbulb"></i>
-            <span class="nav-text">Concepten</span>
-        </a>
-        <a class="navbar-a gentle-hover-shake" href="#contact">
-            <i class="fas fa-envelope icon"></i>
-            <span class="nav-text">Contact</span>
+            <span class=" nav-text">Concepten</span>
         </a>
     </div>
 </div>
 <div id="content">
     <header>
-        <div class="header-content poetsen-one-regular">
-            <h1 class="poetsen-one-regular sticky-text gentle-hover-shake">Fall Prevention Initiative</h1>
-            <p class="poetsen-one-regular">Encouraging regular movement among seniors to reduce fall risks</p>
+        <div class="header-content vollkorn">
+            <h1 class="vollkorn  sticky-text gentle-hover-shake">Fall Prevention Initiative</h1>
+            <p class="vollkorn ">Encouraging regular movement among seniors to reduce fall risks</p>
         </div>
     </header>
 
     <!-- Inserting your provided team section HTML here -->
-    <div id="team" class="responsive-container-block outer-container">
-        <div class="responsive-container-block inner-container">
-            <p class="text-blk section-head-text">
-                Our Team
-            </p>
-            <p class="text-blk section-subhead-text">
-                We are a diverse group of students from Creative Media Design (CMD) and Creative Media and Game
-                Technology
-                (CMGT) at the Hogeschool Rotterdam. United by our passion for enhancing elderly care through innovative
-                solutions, our team blends expertise in design, technology, and user experience. Each of us brings a
-                unique
-                set of skills and perspectives, driving forward our commitment to developing accessible and engaging
-                technologies that promote active lifestyles among seniors. Get to know the creative minds behind our
-                fall
-                prevention initiative!
-            </p>
-            <div class="responsive-container-block">
-                <div class="swiper team-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="img-wrapper">
-                                    <img src="images/team(5).png">
+    <section>
+        <div id="team" class="responsive-container-block outer-container">
+            <div class="responsive-container-block inner-container">
+                <p class="text-blk section-head-text vollkorn">
+                    Our Team
+                </p>
+                <p class="text-blk section-subhead-text ">
+                    We are a diverse group of students from Creative Media Design (CMD) and Creative Media and Game
+                    Technology
+                    (CMGT) at the Hogeschool Rotterdam. United by our passion for enhancing elderly care through
+                    innovative
+                    solutions, our team blends expertise in design, technology, and user experience. Each of us brings a
+                    unique
+                    set of skills and perspectives, driving forward our commitment to developing accessible and engaging
+                    technologies that promote active lifestyles among seniors. Get to know the creative minds behind our
+                    fall
+                    prevention initiative!
+                </p>
+                <div class="responsive-container-block">
+                    <div class="swiper team-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="images/team(5).png">
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="text-blk name">
+                                            Chi Tse
+                                        </p>
+                                        <p class="gentle-hover-shake text-blk position">
+                                            Designer
+                                        </p>
+                                        <p class="text-blk testimonial ">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                    <p class="text-blk name">
-                                        Chi Tse
-                                    </p>
-                                    <p class="gentle-hover-shake text-blk position">
-                                        Designer
-                                    </p>
-                                    <p class="text-blk testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna
-                                    </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="images/team(1).png">
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="text-blk name">
+                                            Lisa Hoeverts
+                                        </p>
+                                        <p class="gentle-hover-shake text-blk position">
+                                            Designer
+                                        </p>
+                                        <p class="text-blk testimonial ">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="images/team(2).png">
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="text-blk name">
+                                            Regina Eloshvili Pereira
+                                        </p>
+                                        <p class="gentle-hover-shake text-blk position ">
+                                            Designer
+                                        </p>
+                                        <p class="text-blk testimonial ">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="images/team(3).png">
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="text-blk name ">
+                                            Thomas Martini
+                                        </p>
+                                        <p class="gentle-hover-shake text-blk position ">
+                                            Programmer
+                                        </p>
+                                        <p class="text-blk testimonial ">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore et dolore magna
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card ">
+                                    <div class="img-wrapper">
+                                        <img src="images/team(4).png">
+                                    </div>
+                                    <div class="card-content ">
+                                        <p class="text-blk name ">
+                                            Mike L. Degrassi
+                                        </p>
+                                        <p class="gentle-hover-shake text-blk position ">
+                                            Programmer
+                                        </p>
+                                        <p class="text-blk testimonial ">
+                                            Focussed on coding anything the team needs. I also like to share ideas and
+                                            brainstorm on concepts.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="img-wrapper">
-                                    <img src="images/team(1).png">
-                                </div>
-                                <div class="card-content">
-                                    <p class="text-blk name">
-                                        Lisa hoeverts
-                                    </p>
-                                    <p class="gentle-hover-shake text-blk position">
-                                        Designer
-                                    </p>
-                                    <p class="text-blk testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="img-wrapper">
-                                    <img src="images/team(2).png">
-                                </div>
-                                <div class="card-content">
-                                    <p class="text-blk name">
-                                        Regina Eloshvili Pereira
-                                    </p>
-                                    <p class="gentle-hover-shake text-blk position">
-                                        Designer
-                                    </p>
-                                    <p class="text-blk testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="img-wrapper">
-                                    <img src="images/team(3).png">
-                                </div>
-                                <div class="card-content">
-                                    <p class="text-blk name">
-                                        Thomas Martini
-                                    </p>
-                                    <p class="gentle-hover-shake text-blk position">
-                                        Programmer
-                                    </p>
-                                    <p class="text-blk testimonial">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="img-wrapper">
-                                    <img src="images/team(4).png">
-                                </div>
-                                <div class="card-content">
-                                    <p class="text-blk name">
-                                        Mike L. Degrassi
-                                    </p>
-                                    <p class="gentle-hover-shake text-blk position">
-                                        Programmer
-                                    </p>
-                                    <p class="text-blk testimonial">
-                                        Focussed on coding anything the team needs. I also like to share ideas and
-                                        brainstorm on concepts.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination container-block">
+                        <div class="swiper-scrollbar"></div>
+                        <!--                        <div class="swiper-button-next"></div>-->
+                        <!--                        <div class="swiper-button-prev"></div>-->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div id="design" class="responsive-container-block outer-container">
+            <div class="responsive-container-block inner-container">
+                <p class="text-blk section-head-text vollkorn">
+                    Design
+                </p>
+                <p class="text-blk section-subhead-text ">
+                    In developing our concepts, we adhered to meticulous design guidelines tailored to meet the unique
+                    needs of our target audience. We integrated design principles that are both functional and
+                    aesthetically appealing, ensuring our designs are accessible, engaging, and encouraging for seniors.
+                    This approach aims to motivate them towards a more active lifestyle, supporting our initiative for
+                    fall prevention. Discover the innovative designs that underpin our project, crafted to enhance user
+                    interaction and overall experience.
+                </p>
+                <div class="responsive-container-block">
+                    <div class="swiper design-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="design-card">
+                                    <div class="design-img-wrapper">
+                                        <img src="images/design(1).png">
+                                    </div>
+                                    <div class="design-card-content">
+                                        <p class="text-blk name">
+                                            Real-time updates and collaborative activities
+                                        </p>
+                                        <p class="text-blk testimonial">
+                                            <strong>Real-time updates to caregivers and family members:</strong><br>
+                                            Provide
+                                            real-time
+                                            notifications and updates about the user's progress and activities, enabling
+                                            caregivers and family members to immediately respond to any issues or
+                                            successes.<br><br>
+
+                                            <strong>Social connectivity:</strong><br> Allow family members and friends
+                                            to
+                                            follow the
+                                            user's progress and offer encouragement through an app or messaging service.<br><br>
+
+                                            <strong>Collaborative activities:</strong><br> Design features that invite
+                                            family members to
+                                            engage in physical activities or play games together, promoting social
+                                            interaction.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design-card">
+                                    <div class="design-img-wrapper">
+                                        <img src="images/design(2).png">
+                                    </div>
+                                    <div class="design-card-content">
+                                        <p class="text-blk name">
+                                            Mental vitality and positive well-being
+                                        </p>
+                                        <p class="text-blk testimonial">
+                                            <strong>Positive Feedback Loops:</strong> <br>Users should regularly
+                                            receive positive feedback on their activities and behavior, enhancing their
+                                            self-esteem and peace of mind.<br><br>
+
+                                            <strong>Trigger Positive Memories:</strong> <br>Users should be able to
+                                            access
+                                            positive reminders, such as photo galleries, music playlists, or spoken
+                                            reminders from family and friends. This can contribute to a sense of
+                                            continuity and well-being.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design-card">
+                                    <div class="design-img-wrapper">
+                                        <img src="images/design(3).png">
+                                    </div>
+                                    <div class="design-card-content">
+                                        <p class="text-blk name">
+                                            Personal adjustment and involvement
+                                        </p>
+                                        <p class="text-blk testimonial">
+                                            <strong>Personal Goals:</strong> <br>Set achievable, customized goals based
+                                            on the user's physical capabilities and preferences.<br><br>
+                                            <strong>Personal Reminders:</strong> <br>Use names and personal messages to
+                                            send reminders and encouragements, providing a more personalized experience.<br><br>
+                                            <strong>Flexibility in Activities:</strong> <br>Offer various types of
+                                            exercises and activities that suit the user's interests.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="design-card">
+                                    <div class="design-img-wrapper">
+                                        <img src="images/design(4).png">
+                                    </div>
+                                    <div class="design-card-content">
+                                        <p class="text-blk name ">
+                                            Personal autonomy and supportive independence
+                                        </p>
+                                        <p class="text-blk testimonial ">
+                                            <strong>Personal Routines and Habits:</strong> <br>Support the personal
+                                            routines and habits of the user. This could involve customized notifications
+                                            that remind them of daily activities, such as meals, or creating a
+                                            structured daily schedule that helps the user maintain their independence.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="concepts" class="responsive-container-block outer-container">
+            <div class="responsive-container-block inner-container">
+                <p class="text-blk section-head-text vollkorn">
+                    Concepts
+                </p>
+                <p class="text-blk section-subhead-text ">
+                    In developing our three concepts, we adhered to meticulous design guidelines tailored to meet the
+                    unique needs of our target audience. We integrated design principles that are both functional and
+                    aesthetically appealing, ensuring our concepts are accessible, engaging, and encouraging for
+                    seniors. This approach aims to motivate them towards a more active lifestyle, supporting our
+                    initiative for enhancing well-being. Discover the innovative designs that underpin our project,
+                    crafted to enhance user interaction and overall experience.
+                </p>
+                <div class="responsive-container-block">
+                    <div class="clearfix">
+                        <div class="concept-img" data-id="1">
+                            <strong class="strong-text testimonial">Slimme Sloffen</strong>
+                            <img src="images/concept(1).png" alt="">
+                            <div class="text-blk d-none">
+                                <p class="testimonial">
+                                    <strong>Slimme Sloffen</strong><br><br>
+                                    <strong>Concept</strong> <br> Comfortabele sloffen met ingebouwde sensoren die de
+                                    bewegingen van de gebruiker monitoren.
+                                    <br><br>
+                                    <strong>Functies</strong>
+                                    <br>
+                                    <strong>Valdetectie:</strong> Sensors in de sloffen detecteren plotselinge
+                                    bewegingen en vallen.
+                                    <br>
+                                    <strong>Verlichting:</strong> Automatische verlichting die aangaat bij beweging in
+                                    het donker om struikelen te voorkomen. <br>
+                                    <strong>Communicatie:</strong> Verstuurd meldingen naar een gekoppelde app voor
+                                    familie of zorgverleners.
+                                    <br>
+                                    <strong>Comfortabel ontwerp:</strong> Zacht en stevig, met goede ondersteuning voor
+                                    de voeten.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="concept-img" data-id="2">
+                            <strong class="strong-text testimonial">Gouden Tijden</strong>
+                            <img src="images/concept(2).png" alt="">
+                            <div class="text-blk d-none">
+                                <p class="testimonial">
+                                    <strong>Gouden Tijden</strong><br><br>
+                                    <strong>Concept</strong> <br> Een app die herinneringen en foto's deelt uit het
+                                    verleden.
+                                    <br><br>
+                                    <strong>Functies</strong>
+                                    <br>
+                                    <strong>Herinneringen:</strong> Dagelijkse herinneringen uit het verleden.
+                                    <br>
+                                    <strong>Foto's:</strong> Deel oude foto's met vrienden en familie. <br>
+                                    <strong>Communicatie:</strong> Maak contact met oude vrienden en familieleden.
+                                    <br>
+                                    <strong>Gebruiksvriendelijk ontwerp:</strong> Gemakkelijk te gebruiken voor alle
+                                    leeftijden.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="concept-img" data-id="3">
+                            <strong class="strong-text testimonial">EnerJoy</strong>
+                            <img src="images/concept(3).png" alt="">
+                            <div class="text-blk d-none">
+                                <p class="testimonial">
+                                    <strong>EnerJoy</strong><br><br>
+                                    <strong>
+                                        Concept
+                                    </strong> <br> Een app die je helpt actief te blijven en je
+                                    energieniveau te verhogen.
+                                    <br><br>
+                                    <strong>Functies</strong>
+                                    <br>
+                                    <strong>Activiteiten:</strong> Dagelijkse oefeningen en activiteiten.
+                                    <br>
+                                    <strong>Tracking:</strong> Houd je voortgang bij en stel doelen. <br>
+                                    <strong>Communicatie:</strong> Maak verbinding met een community van
+                                    gelijkgestemden.
+                                    <br>
+                                    <strong>Motiverend ontwerp:</strong> Blijf gemotiveerd met leuke uitdagingen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="waves">
@@ -185,26 +408,27 @@
             <div class="wave" id="wave4"></div>
         </div>
         <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <li class="social-icon__item"><a class="social-icon__link" target="_blank"
+                                             href="https://www.figma.com/board/zuv5EITX7Y9dpCCzOj5rEH/DC-8-Zorginnovatie?node-id=139-2062&t=Y1vHA0i9cOOJ157G-0">
                 <ion-icon name="logo-figma"></ion-icon>
             </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <li class="social-icon__item"><a class="social-icon__link" target="_blank"
+                                             href="https://github.com/mikedegrassi/ML2-Onepager/">
                 <ion-icon name="logo-github"></ion-icon>
             </a></li>
         </ul>
         <ul class="menu">
             <li class="menu__item"><a class="menu__link" href="#content">Home</a></li>
             <li class="menu__item"><a class="menu__link" href="#team">Team</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Concepten</a></li>
+            <li class="menu__item"><a class="menu__link" href="#design">Design</a></li>
+            <li class="menu__item"><a class="menu__link" href="#concepts">Concepten</a></li>
 
         </ul>
         <p>&copy;2024 ValNetNiet</p>
     </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js" defer></script>
-</div>
-</body>
-</html>
 
